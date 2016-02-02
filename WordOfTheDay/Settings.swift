@@ -1,5 +1,5 @@
 //
-//  SettingsModel.swift
+//  Settings.swift
 //  WordOfTheDay
 //
 //  Created by Oktay Gardener on 01/02/16.

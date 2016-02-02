@@ -1,5 +1,5 @@
 //
-//  FavoriteWordsModel.swift
+//  FavoriteWords.swift
 //  WordOfTheDay
 //
 //  Created by Oktay Gardener on 01/02/16.
