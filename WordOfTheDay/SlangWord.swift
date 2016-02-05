@@ -15,6 +15,8 @@ class SlangWord {
     let definition: String
     let description: String
     let date: NSDate?
+    let urbanDictionaryAPIEndPoint: String = "http://api.urbandictionary.com/v0/random"
+    // find json parser
     
     init(id: Int, udpermalink: String, word: String, definition: String, description: String) {
         self.id = id
