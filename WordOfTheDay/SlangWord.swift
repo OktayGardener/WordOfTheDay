@@ -15,8 +15,9 @@ class SlangWord {
     let definition: String
     let description: String
     let date: NSDate?
-    let urbanDictionaryAPIEndPoint: String = "http://api.urbandictionary.com/v0/random"
-    // find json parser
+    let urbanDictionaryRandomWord: String = "http://api.urbandictionary.com/v0/random"
+    let urbanDictionaryWordOfTheDay: String = "http://urban-word-of-the-day.herokuapp.com/"
+    
     
     init(id: Int, udpermalink: String, word: String, definition: String, description: String) {
         self.id = id
@@ -41,5 +42,35 @@ class SlangWord {
         dateFormatter.dateFormat = "yyyy-MM-dd"
         let dateString = dictionary["sale_starts"] as! String
         date = dateFormatter.dateFromString(dateString)!
+    }
+    
+    init(random:Bool) {
+        if random == true {
+            
+        } else {
+            
+        }
+    }
+    
+    func jsonLoaded(json: String) {
+        print("JSON: \(json)")
+    }
+    
+    func jsonFailed(error: NSError) {
+        print("Error: \(error.localizedDescription)")
+    }
+    
+    func makeGet(endpoint:String) -> String {
+        let manager = AFHTTPRequestOperationManager()
+        manager.requestSerializer.setValue("608c6c08443c6d933576b90966b727358d0066b4", forHTTPHeaderField: "X-Auth-Token")
+        manager.GET(endpoint,
+            parameters: nil,
+            success: { (operation: AFHTTPRequestOperation!, responseObject: AnyObject!) in
+                return responseObject.description
+            },
+            failure: { (operation: AFHTTPRequestOperation!, error: NSError!) in
+                return error.localizedDescription
+            }
+        )
     }
 }
