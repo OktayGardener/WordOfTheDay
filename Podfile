@@ -4,6 +4,10 @@ platform :ios, '9.0'
 # use_frameworks!
 
 target 'WordOfTheDay' do
-  pod 'AFNetworking', '~> 3.0'
+  pod 'Fabric'
+  pod 'TwitterKit'
+  pod 'Digits'
+  pod 'Crashlytics'
+  pod 'TwitterCore'
 end
 

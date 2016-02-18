@@ -8,6 +8,10 @@
 
 import UIKit
 import CoreData
+import TwitterKit
+import Fabric
+import Crashlytics
+import DigitsKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,7 +20,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        // MARK: Twitter & Fabric
+        // Developers: Welcome! Get started with Fabric.app.
+        let welcome = "Welcome to Cannonball! Fabric be awesome!"
+        assert(NSBundle.mainBundle().objectForInfoDictionaryKey("Fabric") != nil, welcome)
+        
+        // Register Crashlytics, Twitter, Digits and MoPub with Fabric.
+        Fabric.with([Crashlytics.self, Twitter.self, Digits.self])
+        
+        // Check for an existing Twitter or Digits session before presenting the sign in screen.
+        if Twitter.sharedInstance().sessionStore.session() == nil && Digits.sharedInstance().session() == nil {
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let signInViewController: AnyObject! = storyboard.instantiateViewControllerWithIdentifier("SignInViewController")
+            window?.rootViewController = signInViewController as? UIViewController
+        }
         return true
     }
 
@@ -43,6 +60,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Saves changes in the application's managed object context before the application terminates.
         self.saveContext()
     }
+    
 
     // MARK: - Core Data stack
 

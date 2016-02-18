@@ -44,13 +44,6 @@ class SlangWord {
         date = dateFormatter.dateFromString(dateString)!
     }
     
-    init(random:Bool) {
-        if random == true {
-            
-        } else {
-            
-        }
-    }
     
     func jsonLoaded(json: String) {
         print("JSON: \(json)")
@@ -60,17 +53,17 @@ class SlangWord {
         print("Error: \(error.localizedDescription)")
     }
     
-    func makeGet(endpoint:String) -> String {
-        let manager = AFHTTPRequestOperationManager()
-        manager.requestSerializer.setValue("608c6c08443c6d933576b90966b727358d0066b4", forHTTPHeaderField: "X-Auth-Token")
-        manager.GET(endpoint,
-            parameters: nil,
-            success: { (operation: AFHTTPRequestOperation!, responseObject: AnyObject!) in
-                return responseObject.description
-            },
-            failure: { (operation: AFHTTPRequestOperation!, error: NSError!) in
-                return error.localizedDescription
-            }
-        )
-    }
+  //  func makeGet(endpoint:String) -> String {
+//        let manager = AFHTTPRequestOperationManager()
+//        manager.requestSerializer.setValue("608c6c08443c6d933576b90966b727358d0066b4", forHTTPHeaderField: "X-Auth-Token")
+//        manager.GET(endpoint,
+//            parameters: nil,
+//            success: { (operation: AFHTTPRequestOperation!, responseObject: AnyObject!) in
+//                return responseObject.description
+//            },
+//            failure: { (operation: AFHTTPRequestOperation!, error: NSError!) in
+//                return error.localizedDescription
+//            }
+//        )
+  //  }
 }

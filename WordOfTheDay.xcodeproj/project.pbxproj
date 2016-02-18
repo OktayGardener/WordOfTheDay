@@ -11,7 +11,6 @@
 		A2F4FA121C604320008F4C7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2F4FA101C604320008F4C7D /* Main.storyboard */; };
 		A2F4FA151C604320008F4C7D /* WordOfTheDay.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A2F4FA131C604320008F4C7D /* WordOfTheDay.xcdatamodeld */; };
 		A2F4FA171C604320008F4C7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2F4FA161C604320008F4C7D /* Assets.xcassets */; };
-		A2F4FA1A1C604320008F4C7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2F4FA181C604320008F4C7D /* LaunchScreen.storyboard */; };
 		A2F4FA271C6044BE008F4C7D /* WordOfTheDayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F4FA261C6044BE008F4C7D /* WordOfTheDayViewController.swift */; };
 		A2F4FA291C6044DF008F4C7D /* WordOfTheDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F4FA281C6044DF008F4C7D /* WordOfTheDay.swift */; };
 		A2F4FA341C604537008F4C7D /* FavoriteWordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F4FA331C604537008F4C7D /* FavoriteWordsViewController.swift */; };
@@ -30,13 +29,11 @@
 /* Begin PBXFileReference section */
 		11A3EC1E185C89DA932BBEA4 /* libPods-WordOfTheDay.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WordOfTheDay.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BB961A94E8D54801EA10261 /* Pods-WordOfTheDay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordOfTheDay.release.xcconfig"; path = "Pods/Target Support Files/Pods-WordOfTheDay/Pods-WordOfTheDay.release.xcconfig"; sourceTree = "<group>"; };
-		A2264EE11C65858B000B0233 /* AFNetworkingBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFNetworkingBridge.h; sourceTree = "<group>"; };
 		A2F4FA091C604320008F4C7D /* WordOfTheDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordOfTheDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2F4FA0C1C604320008F4C7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2F4FA111C604320008F4C7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A2F4FA141C604320008F4C7D /* WordOfTheDay.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WordOfTheDay.xcdatamodel; sourceTree = "<group>"; };
 		A2F4FA161C604320008F4C7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A2F4FA191C604320008F4C7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A2F4FA1B1C604320008F4C7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A2F4FA261C6044BE008F4C7D /* WordOfTheDayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordOfTheDayViewController.swift; sourceTree = "<group>"; };
 		A2F4FA281C6044DF008F4C7D /* WordOfTheDay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordOfTheDay.swift; sourceTree = "<group>"; };
@@ -95,7 +92,6 @@
 		A2F4FA0B1C604320008F4C7D /* WordOfTheDay */ = {
 			isa = PBXGroup;
 			children = (
-				A2264EE11C65858B000B0233 /* AFNetworkingBridge.h */,
 				A2F4FA4D1C60481B008F4C7D /* SlangWord */,
 				A2F4FA461C6047DF008F4C7D /* Word */,
 				A2F4FA451C6047C2008F4C7D /* WordOfTheDay */,
@@ -106,7 +102,6 @@
 				A2F4FA0C1C604320008F4C7D /* AppDelegate.swift */,
 				A2F4FA101C604320008F4C7D /* Main.storyboard */,
 				A2F4FA161C604320008F4C7D /* Assets.xcassets */,
-				A2F4FA181C604320008F4C7D /* LaunchScreen.storyboard */,
 				A2F4FA1B1C604320008F4C7D /* Info.plist */,
 				A2F4FA131C604320008F4C7D /* WordOfTheDay.xcdatamodeld */,
 			);
@@ -340,7 +335,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2F4FA1A1C604320008F4C7D /* LaunchScreen.storyboard in Resources */,
 				A2F4FA171C604320008F4C7D /* Assets.xcassets in Resources */,
 				A2F4FA121C604320008F4C7D /* Main.storyboard in Resources */,
 			);
@@ -406,8 +400,8 @@
 				A2F4FA431C6045A0008F4C7D /* SignIn.swift in Sources */,
 				A2F4FA3F1C60458F008F4C7D /* UserAccount.swift in Sources */,
 				A2F4FA341C604537008F4C7D /* FavoriteWordsViewController.swift in Sources */,
-				A2F4FA501C604849008F4C7D /* SlangWord.swift in Sources */,
 				A2F4FA271C6044BE008F4C7D /* WordOfTheDayViewController.swift in Sources */,
+				A2F4FA501C604849008F4C7D /* SlangWord.swift in Sources */,
 				A2F4FA361C60454D008F4C7D /* FavoriteWords.swift in Sources */,
 				A2F4FA291C6044DF008F4C7D /* WordOfTheDay.swift in Sources */,
 				A2F4FA3D1C604588008F4C7D /* UserAccountViewController.swift in Sources */,
@@ -427,14 +421,6 @@
 				A2F4FA111C604320008F4C7D /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		A2F4FA181C604320008F4C7D /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A2F4FA191C604320008F4C7D /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -532,7 +518,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = professoroak.WordOfTheDay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = AFNetworkingBridge.h;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Debug;
 		};
@@ -545,7 +531,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = professoroak.WordOfTheDay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = AFNetworkingBridge.h;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Release;
 		};
