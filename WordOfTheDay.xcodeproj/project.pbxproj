@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11A777E9239B46CF178032A7 /* Pods_WordOfTheDay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 609C74C149A3F4C1951A7867 /* Pods_WordOfTheDay.framework */; };
 		A2F4FA0D1C604320008F4C7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F4FA0C1C604320008F4C7D /* AppDelegate.swift */; };
 		A2F4FA121C604320008F4C7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2F4FA101C604320008F4C7D /* Main.storyboard */; };
 		A2F4FA151C604320008F4C7D /* WordOfTheDay.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A2F4FA131C604320008F4C7D /* WordOfTheDay.xcdatamodeld */; };
@@ -23,12 +24,11 @@
 		A2F4FA431C6045A0008F4C7D /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F4FA421C6045A0008F4C7D /* SignIn.swift */; };
 		A2F4FA4C1C604806008F4C7D /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F4FA4B1C604806008F4C7D /* Word.swift */; };
 		A2F4FA501C604849008F4C7D /* SlangWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F4FA4F1C604849008F4C7D /* SlangWord.swift */; };
-		BA51FAB96A99F65F2537E693 /* libPods-WordOfTheDay.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 11A3EC1E185C89DA932BBEA4 /* libPods-WordOfTheDay.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		11A3EC1E185C89DA932BBEA4 /* libPods-WordOfTheDay.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WordOfTheDay.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BB961A94E8D54801EA10261 /* Pods-WordOfTheDay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordOfTheDay.release.xcconfig"; path = "Pods/Target Support Files/Pods-WordOfTheDay/Pods-WordOfTheDay.release.xcconfig"; sourceTree = "<group>"; };
+		609C74C149A3F4C1951A7867 /* Pods_WordOfTheDay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WordOfTheDay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2F4FA091C604320008F4C7D /* WordOfTheDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordOfTheDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2F4FA0C1C604320008F4C7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2F4FA111C604320008F4C7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -55,7 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA51FAB96A99F65F2537E693 /* libPods-WordOfTheDay.a in Frameworks */,
+				11A777E9239B46CF178032A7 /* Pods_WordOfTheDay.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +268,7 @@
 		C0ACF39D4FA36DA91BB9CC06 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				11A3EC1E185C89DA932BBEA4 /* libPods-WordOfTheDay.a */,
+				609C74C149A3F4C1951A7867 /* Pods_WordOfTheDay.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
