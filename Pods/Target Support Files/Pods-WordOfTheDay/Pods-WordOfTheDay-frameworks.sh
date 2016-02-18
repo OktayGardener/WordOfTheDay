@@ -84,8 +84,10 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "Pods-WordOfTheDay/Alamofire.framework"
   install_framework "Pods-WordOfTheDay/SwiftyJSON.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "Pods-WordOfTheDay/Alamofire.framework"
   install_framework "Pods-WordOfTheDay/SwiftyJSON.framework"
 fi

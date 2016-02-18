@@ -8,6 +8,7 @@ target 'WordOfTheDay' do
   pod 'TwitterKit'
   pod 'Digits'
   pod 'Crashlytics'
+  pod 'Alamofire'
   pod 'TwitterCore'
   pod 'SwiftyJSON', :git => 'https://github.com/SwiftyJSON/SwiftyJSON.git'
 end

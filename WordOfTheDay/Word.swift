@@ -26,9 +26,7 @@ class Word {
     }
     
     init(dictionary: [String : AnyObject]) {
-        // Note: This is a naive implementation of JSON parsing.
-        // We might use Decodable: https://github.com/Anviking/Decodable
-        
+
         id = dictionary["id"] as! Int
         permalink = dictionary["permalink"] as! String
         word = dictionary["word"] as! String

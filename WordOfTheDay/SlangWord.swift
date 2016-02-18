@@ -28,6 +28,7 @@ class SlangWord {
         self.date = NSDate()
     }
     
+    // not going to be used tbh
     init(dictionary: [String : AnyObject]) {
         // Note: This is a naive implementation of JSON parsing.
         // We might use Decodable: https://github.com/Anviking/Decodable
@@ -52,18 +53,5 @@ class SlangWord {
     func jsonFailed(error: NSError) {
         print("Error: \(error.localizedDescription)")
     }
-    
-  //  func makeGet(endpoint:String) -> String {
-//        let manager = AFHTTPRequestOperationManager()
-//        manager.requestSerializer.setValue("608c6c08443c6d933576b90966b727358d0066b4", forHTTPHeaderField: "X-Auth-Token")
-//        manager.GET(endpoint,
-//            parameters: nil,
-//            success: { (operation: AFHTTPRequestOperation!, responseObject: AnyObject!) in
-//                return responseObject.description
-//            },
-//            failure: { (operation: AFHTTPRequestOperation!, error: NSError!) in
-//                return error.localizedDescription
-//            }
-//        )
-  //  }
+
 }

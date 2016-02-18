@@ -9,7 +9,6 @@
         <!--WordOfTheDay View Controller-->
         <scene sceneID="pHw-4S-UaI">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wiU-aB-91w" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="aG1-dm-mAd" userLabel="WordOfTheDay View Controller" customClass="ThemeChooserViewController" customModule="WordOfTheDay" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="125" sectionHeaderHeight="22" sectionFooterHeight="22" id="yzx-Zk-q3D">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -64,6 +63,7 @@
                         <barButtonItem key="rightBarButtonItem" image="Popular" id="Brd-vp-Ykq"/>
                     </navigationItem>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wiU-aB-91w" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="407" y="587"/>
         </scene>
@@ -222,7 +222,6 @@
         <!--Navigation Controller-->
         <scene sceneID="vON-Lt-Uie">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="AoZ-ZD-rd2" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Lee-FR-LJd" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="NOO-Xk-feS"/>
@@ -240,6 +239,7 @@
                         <segue destination="aG1-dm-mAd" kind="relationship" relationship="rootViewController" id="Vuo-7U-FWl"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AoZ-ZD-rd2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-89.599999999999994" y="587.88"/>
         </scene>
