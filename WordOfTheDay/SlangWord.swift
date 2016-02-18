@@ -15,9 +15,6 @@ class SlangWord {
     let definition: String
     let description: String
     let date: NSDate?
-    let urbanDictionaryRandomWord: String = "http://api.urbandictionary.com/v0/random"
-    let urbanDictionaryWordOfTheDay: String = "http://urban-word-of-the-day.herokuapp.com/"
-    
     
     init(id: Int, udpermalink: String, word: String, definition: String, description: String) {
         self.id = id

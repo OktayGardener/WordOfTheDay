@@ -9,7 +9,7 @@
         <!--WordOfTheDay View Controller-->
         <scene sceneID="pHw-4S-UaI">
             <objects>
-                <tableViewController id="aG1-dm-mAd" userLabel="WordOfTheDay View Controller" customClass="ThemeChooserViewController" customModule="WordOfTheDay" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="aG1-dm-mAd" userLabel="WordOfTheDay View Controller" customClass="WordOfTheDayViewController" customModule="WordOfTheDay" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="125" sectionHeaderHeight="22" sectionFooterHeight="22" id="yzx-Zk-q3D">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -23,29 +23,32 @@
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="125"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eNL-DI-kCC">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="125"/>
-                                        </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Theme" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="320" translatesAutoresizingMaskIntoConstraints="NO" id="z1g-4J-H8u">
-                                            <rect key="frame" x="0.0" y="89" width="320" height="28"/>
-                                            <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
-                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="word" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="320" translatesAutoresizingMaskIntoConstraints="NO" id="kyv-MO-Sf5" userLabel="Word Label">
+                                            <rect key="frame" x="0.0" y="8" width="320" height="28"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                                            <color key="textColor" red="0.6620993589743589" green="0.6620993589743589" blue="0.6620993589743589" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="example" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="320" translatesAutoresizingMaskIntoConstraints="NO" id="hDD-mi-Sau" userLabel="Example Label">
+                                            <rect key="frame" x="0.0" y="69" width="320" height="28"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                            <color key="textColor" red="0.6620993589743589" green="0.6620993589743589" blue="0.6620993589743589" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="definition" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="320" translatesAutoresizingMaskIntoConstraints="NO" id="z1g-4J-H8u" userLabel="Definition Label">
+                                            <rect key="frame" x="0.0" y="39" width="320" height="28"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="14"/>
+                                            <color key="textColor" red="0.6620993589743589" green="0.6620993589743589" blue="0.6620993589743589" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="eNL-DI-kCC" firstAttribute="top" secondItem="2gR-N6-Uys" secondAttribute="top" id="ErH-LF-3mo"/>
-                                        <constraint firstItem="eNL-DI-kCC" firstAttribute="leading" secondItem="z1g-4J-H8u" secondAttribute="leading" id="G13-7c-Vvf"/>
-                                        <constraint firstAttribute="trailing" secondItem="eNL-DI-kCC" secondAttribute="trailing" id="SQc-Pg-l5F"/>
                                         <constraint firstItem="z1g-4J-H8u" firstAttribute="bottom" secondItem="2gR-N6-Uys" secondAttribute="bottomMargin" id="UF4-bS-tJk"/>
-                                        <constraint firstAttribute="bottom" secondItem="eNL-DI-kCC" secondAttribute="bottom" id="WIA-Yt-LdJ"/>
                                         <constraint firstItem="z1g-4J-H8u" firstAttribute="leading" secondItem="2gR-N6-Uys" secondAttribute="leading" id="fml-xC-gqs"/>
-                                        <constraint firstItem="eNL-DI-kCC" firstAttribute="trailing" secondItem="z1g-4J-H8u" secondAttribute="trailing" id="rRk-wv-0B3"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="nameLabel" destination="z1g-4J-H8u" id="S7z-JG-WIx"/>
-                                    <outlet property="pictureImageView" destination="eNL-DI-kCC" id="JQ1-PR-ufm"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
