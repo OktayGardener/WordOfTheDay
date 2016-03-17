@@ -28,7 +28,9 @@ class SettingsTableViewController: UITableViewController {
     
     // MARK: About view
     func presentAboutView() {
-        performSegueWithIdentifier("presentAboutTableViewController", sender: self)
+        self.performSegueWithIdentifier("presentAboutTableViewController", sender: self)
+        //let storyboard = UIStoryboard(name: "Main", bundle: nil)
+
     }
 
     override func didReceiveMemoryWarning() {

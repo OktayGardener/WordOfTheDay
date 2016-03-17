@@ -20,12 +20,18 @@ class WordCell: UITableViewCell {
     @IBOutlet var linkButton: UIButton!
     @IBOutlet var shareOnTwitterButton: UIButton!
     @IBOutlet var favoriteButton: UIButton!
+    @IBOutlet var shareButton: UIButton!
     
     var urbanDictionarylink: NSURL!
     
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+        
+        self.shareButton.imageView?.tintColor = UIColor.whiteColor()
+        self.shareButton.tintColor = UIColor.whiteColor()
+    
     }
     
     override func layoutSubviews() {

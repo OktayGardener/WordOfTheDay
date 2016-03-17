@@ -17,21 +17,31 @@ class WordOfTheDayViewController: UITableViewController {
     
     var words: [SlangWord] = []
     let wordTableCellReuseIdentifier = "WordCell"
+    var refreshFactor: Int = 1
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.refreshControl = UIRefreshControl()
+        self.refreshControl?.tintColor = UIColor.whiteColor()
+        self.refreshControl!.addTarget(self, action: "refresh:", forControlEvents: UIControlEvents.ValueChanged)
+        self.refreshControl!.attributedTitle = NSAttributedString(string: "Pull to load more",
+            attributes:[ NSForegroundColorAttributeName: UIColor.whiteColor() ])
+        
+        self.tableView.scrollsToTop = true
+        
         self.presentLoginSuccessfulAlert()
         
         getWords() { responseObject, error in
-            // use responseObject and error here
-         //   print("responseObject = \(responseObject); error = \(error)")
             if responseObject != nil {
                 self.randomWordJSON = JSON(responseObject!)
                 self.parseRandomSlangWordOfTheDay(self.randomWordJSON)
-                self.tableView.reloadData()
+                let range = NSMakeRange(0, self.tableView.numberOfSections)
+                let sections = NSIndexSet(indexesInRange: range)
+                self.tableView.reloadSections(sections, withRowAnimation: .Automatic)
             } else {
-                self.presentAlert("Network/API error", alertMessage: "Could not fetch the words, check your internet connection and try again", dismissMessage: "OK")
+                self.presentAlert("Network/API error",
+                    alertMessage: "Could not fetch the words, check your internet connection and try again",
+                    dismissMessage: "OK")
             }
             return
         }
@@ -40,7 +50,7 @@ class WordOfTheDayViewController: UITableViewController {
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        navigationController?.navigationBar.translucent = false
+      //  navigationController?.navigationBar.translucent = false
     }
     
     override func didReceiveMemoryWarning() {
@@ -87,7 +97,7 @@ class WordOfTheDayViewController: UITableViewController {
     }
     
     func parseRandomSlangWordOfTheDay(json: JSON){
-        for i in 0...3 {
+        for i in 0...4 {
             if json["list"][i] != nil {
                 let currentJSON = json["list"][i]
                 let currentWord = SlangWord(
@@ -95,10 +105,37 @@ class WordOfTheDayViewController: UITableViewController {
                     udpermalink: currentJSON["permalink"].string!,
                     word: currentJSON["word"].string!,
                     definition: currentJSON["definition"].string!,
-                    description: currentJSON["example"].string!)
-                self.words.append(currentWord)
+                    example: currentJSON["example"].string!)
+                //self.words.append(currentWord)
+                self.words.insert(currentWord, atIndex: 0)
+                //self.refreshFactor += 1
             }
         }
+    }
+    
+    // MARK: Refresh
+    func refresh(sender:AnyObject)
+    {
+        getWords() { responseObject, error in
+            // use responseObject and error here
+            //   print("responseObject = \(responseObject); error = \(error)")
+            if responseObject != nil {
+              //  self.tableView.beginUpdates()
+                //self.words.removeAll()
+                self.randomWordJSON = JSON(responseObject!)
+                self.parseRandomSlangWordOfTheDay(self.randomWordJSON)
+               // self.tableView.endUpdates()
+                self.tableView.reloadData()
+            } else {
+                self.presentAlert("Network/API error", alertMessage: "Could not fetch the words, check your internet connection and try again", dismissMessage: "OK")
+            }
+            return
+        }
+        //self.tableView.reloadData()
+        let range = NSMakeRange(0, self.tableView.numberOfSections)
+        let sections = NSIndexSet(indexesInRange: range)
+        self.tableView.reloadSections(sections, withRowAnimation: .Automatic)
+        self.refreshControl!.endRefreshing()
     }
 
     // MARK: Cell Button Actions
@@ -131,19 +168,36 @@ class WordOfTheDayViewController: UITableViewController {
                 }
             }
         }
-
     }
     
     @IBAction func saveFavoriteWord(sender: AnyObject) {
-        print("savefavoriteword called")
+        let buttonPosition = sender.convertPoint(CGPointZero, toView: self.tableView)
+        let indexPath = self.tableView.indexPathForRowAtPoint(buttonPosition)
+        if indexPath != nil {
+            let current = self.words[indexPath!.row]
+            current.date = NSDate()
+            SlangWordPersistence.sharedInstance.persistWord(current)
+            FavoriteWordsTableViewController.sharedInstance.tableView.reloadData()
+            presentAlert("Success", alertMessage: "Word successfully saved in favorites", dismissMessage: "OK")
+        }
     }
     
+    @IBAction func shareWord(sender: AnyObject) {
+        let buttonPosition = sender.convertPoint(CGPointZero, toView: self.tableView)
+        let indexPath = self.tableView.indexPathForRowAtPoint(buttonPosition)
+        if indexPath != nil {
+            let current = self.words[indexPath!.row]
+                let activityViewController = UIActivityViewController(activityItems: ["OMG I totally found out the meaning of \(current.word) via this bomb app by oktaygardener!! + \n" + current.udpermalink as NSString], applicationActivities: nil)
+                presentViewController(activityViewController, animated: true, completion: {})
+            
+        }
+    }
     
     // MARK: UITableViewDataSource
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // Return the number of rows in the section.
-        return self.words.count
+        return self.words.count //* self.refreshFactor
     }
     
     
@@ -156,7 +210,7 @@ class WordOfTheDayViewController: UITableViewController {
         let current = self.words[indexPath.row]
         cell.wordLabel.text = current.word
         cell.definitionTextField.text = current.definition
-        cell.descriptionTextField.text = current.description
+        cell.descriptionTextField.text = current.example
         cell.urbanDictionarylink = NSURL(string: current.udpermalink)
         
         
@@ -164,6 +218,8 @@ class WordOfTheDayViewController: UITableViewController {
         cell.linkButton.addTarget(self, action: "openUrbanDictionaryLink:", forControlEvents: .TouchUpInside)
         cell.shareOnTwitterButton.addTarget(self, action: "shareOnTwitter:", forControlEvents: .TouchUpInside)
         cell.favoriteButton.addTarget(self, action: "saveFavoriteWord:", forControlEvents: .TouchUpInside)
+        
+        cell.shareButton.addTarget(self, action: "shareWord:", forControlEvents: .TouchUpInside)
         
         return cell
     }

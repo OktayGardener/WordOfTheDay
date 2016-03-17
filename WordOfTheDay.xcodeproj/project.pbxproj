@@ -15,20 +15,14 @@
 		A29F8F1B1C9A1EF400FD1308 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29F8F1A1C9A1EF400FD1308 /* SettingsTableViewController.swift */; };
 		A29F8F1D1C9A20FB00FD1308 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29F8F1C1C9A20FB00FD1308 /* AboutViewController.swift */; };
 		A29F8F1F1C9A22D200FD1308 /* SettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29F8F1E1C9A22D200FD1308 /* SettingsCell.swift */; };
-		A29F8F211C9A7E1500FD1308 /* WordPersistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29F8F201C9A7E1500FD1308 /* WordPersistence.swift */; };
+		A29F8F211C9A7E1500FD1308 /* SlangWordPersistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29F8F201C9A7E1500FD1308 /* SlangWordPersistence.swift */; };
+		A2DD456D1C9A915A00E7D329 /* FavoriteWordsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DD456C1C9A915A00E7D329 /* FavoriteWordsTableViewController.swift */; };
 		A2EE2B3B1C75A4C00053C050 /* WordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EE2B3A1C75A4C00053C050 /* WordCell.swift */; };
 		A2F4FA0D1C604320008F4C7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F4FA0C1C604320008F4C7D /* AppDelegate.swift */; };
 		A2F4FA121C604320008F4C7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2F4FA101C604320008F4C7D /* Main.storyboard */; };
 		A2F4FA151C604320008F4C7D /* WordOfTheDay.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A2F4FA131C604320008F4C7D /* WordOfTheDay.xcdatamodeld */; };
 		A2F4FA271C6044BE008F4C7D /* WordOfTheDayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F4FA261C6044BE008F4C7D /* WordOfTheDayViewController.swift */; };
-		A2F4FA291C6044DF008F4C7D /* WordOfTheDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F4FA281C6044DF008F4C7D /* WordOfTheDay.swift */; };
-		A2F4FA341C604537008F4C7D /* FavoriteWordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F4FA331C604537008F4C7D /* FavoriteWordsViewController.swift */; };
-		A2F4FA361C60454D008F4C7D /* FavoriteWords.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F4FA351C60454D008F4C7D /* FavoriteWords.swift */; };
-		A2F4FA3B1C604565008F4C7D /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F4FA3A1C604565008F4C7D /* Settings.swift */; };
-		A2F4FA3D1C604588008F4C7D /* UserAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F4FA3C1C604588008F4C7D /* UserAccountViewController.swift */; };
-		A2F4FA3F1C60458F008F4C7D /* UserAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F4FA3E1C60458F008F4C7D /* UserAccount.swift */; };
 		A2F4FA411C604599008F4C7D /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F4FA401C604599008F4C7D /* SignInViewController.swift */; };
-		A2F4FA431C6045A0008F4C7D /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F4FA421C6045A0008F4C7D /* SignIn.swift */; };
 		A2F4FA501C604849008F4C7D /* SlangWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F4FA4F1C604849008F4C7D /* SlangWord.swift */; };
 /* End PBXBuildFile section */
 
@@ -42,7 +36,8 @@
 		A29F8F1A1C9A1EF400FD1308 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		A29F8F1C1C9A20FB00FD1308 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		A29F8F1E1C9A22D200FD1308 /* SettingsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsCell.swift; sourceTree = "<group>"; };
-		A29F8F201C9A7E1500FD1308 /* WordPersistence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordPersistence.swift; sourceTree = "<group>"; };
+		A29F8F201C9A7E1500FD1308 /* SlangWordPersistence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlangWordPersistence.swift; sourceTree = "<group>"; };
+		A2DD456C1C9A915A00E7D329 /* FavoriteWordsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteWordsTableViewController.swift; sourceTree = "<group>"; };
 		A2EE2B3A1C75A4C00053C050 /* WordCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordCell.swift; sourceTree = "<group>"; };
 		A2F4FA091C604320008F4C7D /* WordOfTheDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordOfTheDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2F4FA0C1C604320008F4C7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -50,14 +45,7 @@
 		A2F4FA141C604320008F4C7D /* WordOfTheDay.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WordOfTheDay.xcdatamodel; sourceTree = "<group>"; };
 		A2F4FA1B1C604320008F4C7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A2F4FA261C6044BE008F4C7D /* WordOfTheDayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordOfTheDayViewController.swift; sourceTree = "<group>"; };
-		A2F4FA281C6044DF008F4C7D /* WordOfTheDay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordOfTheDay.swift; sourceTree = "<group>"; };
-		A2F4FA331C604537008F4C7D /* FavoriteWordsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteWordsViewController.swift; sourceTree = "<group>"; };
-		A2F4FA351C60454D008F4C7D /* FavoriteWords.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteWords.swift; sourceTree = "<group>"; };
-		A2F4FA3A1C604565008F4C7D /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
-		A2F4FA3C1C604588008F4C7D /* UserAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAccountViewController.swift; sourceTree = "<group>"; };
-		A2F4FA3E1C60458F008F4C7D /* UserAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAccount.swift; sourceTree = "<group>"; };
 		A2F4FA401C604599008F4C7D /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
-		A2F4FA421C6045A0008F4C7D /* SignIn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
 		A2F4FA4F1C604849008F4C7D /* SlangWord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlangWord.swift; sourceTree = "<group>"; };
 		E1104133F840AE2232428C62 /* Pods-WordOfTheDay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordOfTheDay.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WordOfTheDay/Pods-WordOfTheDay.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -87,12 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				A2F4FA4F1C604849008F4C7D /* SlangWord.swift */,
-				A2F4FA281C6044DF008F4C7D /* WordOfTheDay.swift */,
-				A2F4FA351C60454D008F4C7D /* FavoriteWords.swift */,
-				A2F4FA3A1C604565008F4C7D /* Settings.swift */,
-				A2F4FA421C6045A0008F4C7D /* SignIn.swift */,
-				A2F4FA3E1C60458F008F4C7D /* UserAccount.swift */,
-				A29F8F201C9A7E1500FD1308 /* WordPersistence.swift */,
+				A29F8F201C9A7E1500FD1308 /* SlangWordPersistence.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -101,11 +84,10 @@
 			isa = PBXGroup;
 			children = (
 				A2F4FA261C6044BE008F4C7D /* WordOfTheDayViewController.swift */,
-				A2F4FA331C604537008F4C7D /* FavoriteWordsViewController.swift */,
 				A29F8F1A1C9A1EF400FD1308 /* SettingsTableViewController.swift */,
-				A2F4FA3C1C604588008F4C7D /* UserAccountViewController.swift */,
 				A2F4FA401C604599008F4C7D /* SignInViewController.swift */,
 				A29F8F1C1C9A20FB00FD1308 /* AboutViewController.swift */,
+				A2DD456C1C9A915A00E7D329 /* FavoriteWordsTableViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -303,17 +285,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2F4FA3B1C604565008F4C7D /* Settings.swift in Sources */,
-				A2F4FA431C6045A0008F4C7D /* SignIn.swift in Sources */,
-				A2F4FA3F1C60458F008F4C7D /* UserAccount.swift in Sources */,
-				A2F4FA341C604537008F4C7D /* FavoriteWordsViewController.swift in Sources */,
 				A2F4FA271C6044BE008F4C7D /* WordOfTheDayViewController.swift in Sources */,
 				A2F4FA501C604849008F4C7D /* SlangWord.swift in Sources */,
-				A2F4FA361C60454D008F4C7D /* FavoriteWords.swift in Sources */,
-				A2F4FA291C6044DF008F4C7D /* WordOfTheDay.swift in Sources */,
-				A29F8F211C9A7E1500FD1308 /* WordPersistence.swift in Sources */,
+				A2DD456D1C9A915A00E7D329 /* FavoriteWordsTableViewController.swift in Sources */,
+				A29F8F211C9A7E1500FD1308 /* SlangWordPersistence.swift in Sources */,
 				A29F8F1D1C9A20FB00FD1308 /* AboutViewController.swift in Sources */,
-				A2F4FA3D1C604588008F4C7D /* UserAccountViewController.swift in Sources */,
 				A29F8F1F1C9A22D200FD1308 /* SettingsCell.swift in Sources */,
 				A2F4FA411C604599008F4C7D /* SignInViewController.swift in Sources */,
 				A2F4FA0D1C604320008F4C7D /* AppDelegate.swift in Sources */,
