@@ -92,6 +92,8 @@
 		98213B5DD3836F1A97E0F0AE06AE1269 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9AF464438474999105E184FD7BD0E509 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
 		A12AD5DC09DB3B1AED5841F7B317C80C /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A29F8F141C9A07DB00FD1308 /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = TwitterKit/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = "<group>"; };
+		A29F8F151C9A07DB00FD1308 /* DigitsKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = DigitsKitResources.bundle; path = Digits/iOS/DigitsKit.framework/Versions/A/Resources/DigitsKitResources.bundle; sourceTree = "<group>"; };
 		AB676BC4F8175B1463855698A7CE944E /* Pods-WordOfTheDay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WordOfTheDay.debug.xcconfig"; sourceTree = "<group>"; };
 		B2E46295A17A0AA9B1FF03B84E42B388 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
 		B5A2ECC2CD71291AD941E3F209A02AB4 /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
@@ -139,6 +141,8 @@
 		22593A0DCE7283D5D1941D34D15E41E2 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
+				A29F8F141C9A07DB00FD1308 /* TwitterKitResources.bundle */,
+				A29F8F151C9A07DB00FD1308 /* DigitsKitResources.bundle */,
 				818DBF578313249D1CF7027A0057BF05 /* Pods-WordOfTheDay */,
 			);
 			name = "Targets Support Files";

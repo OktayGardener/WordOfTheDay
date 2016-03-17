@@ -8,47 +8,31 @@
 
 import Foundation
 
-class SlangWord {
-    let id: Int
-    let udpermalink: String
-    let word: String
-    let definition: String
-    let description: String
-    let date: NSDate?
+public class SlangWord: NSObject, NSCoding {
+    private struct SerializationKeys {
+        static let id = "id"
+        static let udpermalink = "udpermalink"
+        static let word = "word"
+        static let definition = "definition"
+        static let example = "example"
+        static let date = "date"
+    }
     
-    init(id: Int, udpermalink: String, word: String, definition: String, description: String) {
+    
+    public var id: Int
+    public var udpermalink: String = ""
+    public var word: String = ""
+    public var definition: String = ""
+    public var example: String = ""
+    public var date = NSDate()
+    
+    init(id: Int, udpermalink: String, word: String, definition: String, example: String) {
         self.id = id
         self.udpermalink = udpermalink
         self.word = word
         self.definition = definition
-        self.description = description
+        self.example = example
         self.date = NSDate()
-    }
-    
-    // not going to be used tbh
-    init(dictionary: [String : AnyObject]) {
-        // Note: This is a naive implementation of JSON parsing.
-        // We might use Decodable: https://github.com/Anviking/Decodable
-        
-        id = dictionary["id"] as! Int
-        udpermalink = dictionary["udpermalink"] as! String
-        word = dictionary["word"] as! String
-        definition = dictionary["definition"] as! String
-        description = dictionary["description"] as! String
-        
-        let dateFormatter = NSDateFormatter()
-        dateFormatter.dateFormat = "yyyy-MM-dd"
-        let dateString = dictionary["sale_starts"] as! String
-        date = dateFormatter.dateFromString(dateString)!
-    }
-    
-    
-    func jsonLoaded(json: String) {
-        print("JSON: \(json)")
-    }
-    
-    func jsonFailed(error: NSError) {
-        print("Error: \(error.localizedDescription)")
     }
 
 }

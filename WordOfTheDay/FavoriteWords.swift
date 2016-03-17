@@ -13,7 +13,6 @@ import Foundation
 class FavoriteWords {
     static let sharedInstance = FavoriteWords()
     
-    var favoriteRegularWords: [Word] = []
     var favoriteSlangWords: [SlangWord] = []
     var favoriteWords: [Any] = []
     
@@ -21,17 +20,6 @@ class FavoriteWords {
         
     }
     
-}
-
-extension Word {
-    var isFavorited: Bool {
-        get {
-            return false
-        }
-        set {
-            return
-        }
-    }
 }
 
 extension SlangWord {

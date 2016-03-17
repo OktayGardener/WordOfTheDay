@@ -13,11 +13,6 @@ class WordOfTheDay {
     static let requestedNewWordNotificationName = "wotd.newword.wordoftheday.notification"
     static let requestedNewSlangWordNotification = "wotd.newslangword.wordoftheday.notification"
     
-    var word: [Word] = [] {
-        didSet {
-            postRequestedNewWordNotification()
-        }
-    }
     
     var slangWord: [SlangWord] = [] {
         didSet {
@@ -26,10 +21,6 @@ class WordOfTheDay {
     }
     
     init() {
-        
-    }
-    
-    init(word: [Word], slangWord: [SlangWord]) {
         
     }
     

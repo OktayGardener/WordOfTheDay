@@ -20,16 +20,19 @@ class SignInViewController: UIViewController, UIAlertViewDelegate {
     @IBOutlet weak var signInTwitterButton: UIButton!
     
     @IBOutlet weak var signInPhoneButton: UIButton!
-    
+
     // MARK: View Life Cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
         decorateButton(signInTwitterButton, color: UIColor(red: 0.333, green: 0.675, blue: 0.933, alpha: 1))
+        navigationController?.navigationBar.translucent = false
     }
     
-    private func navigateToMainAppScreen() {
-        performSegueWithIdentifier("ShowThemeChooser", sender: self)
+    func navigateToMainAppScreen() {
+        dispatch_async(dispatch_get_main_queue(), {
+            self.performSegueWithIdentifier("LoginSuccessfulSegue", sender: self)
+        })
     }
     
     // MARK: IBActions
@@ -37,7 +40,7 @@ class SignInViewController: UIViewController, UIAlertViewDelegate {
     @IBAction func signInWithTwitter(sender: UIButton) {
         Twitter.sharedInstance().logInWithCompletion { session, error in
             if session != nil {
-                // Navigate to the main app screen to select a theme.
+                // Navigate to the main app screen
                 self.navigateToMainAppScreen()
                 
                 // Tie crashes to a Twitter user ID and username in Crashlytics.
@@ -59,7 +62,7 @@ class SignInViewController: UIViewController, UIAlertViewDelegate {
         appearance.backgroundColor = UIColor.whiteColor()
         appearance.accentColor = UIColor.greenColor()
         
-           }
+    }
     
     @IBAction func skipSignIn(sender: AnyObject) {
         // Log Answers Custom Event.
@@ -74,6 +77,13 @@ class SignInViewController: UIViewController, UIAlertViewDelegate {
         button.layer.borderColor = color.CGColor
         button.layer.borderWidth = 2
         button.layer.cornerRadius = 6
+    }
+    
+    // MARK: Alerts
+    func presentAlert(alertTitle: String, alertMessage: String, dismissMessage: String) {
+        let alert = UIAlertController(title: alertTitle, message: alertMessage, preferredStyle: UIAlertControllerStyle.Alert)
+        alert.addAction(UIAlertAction(title: dismissMessage, style: UIAlertActionStyle.Default, handler: nil))
+        self.presentViewController(alert, animated: true, completion: nil)
     }
     
 }

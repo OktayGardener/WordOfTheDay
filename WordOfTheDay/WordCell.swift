@@ -7,19 +7,25 @@
 //
 
 import UIKit
+import TwitterKit
 
 class WordCell: UITableViewCell {
     
     // MARK: Properties
     
-    @IBOutlet private weak var wordLabel: UILabel!
-    @IBOutlet private weak var definitionLabel: UILabel!
-    @IBOutlet private weak var exampleLabel: UILabel!
+    @IBOutlet var wordLabel: UILabel!
+    @IBOutlet var definitionTextField: UITextView!
+    @IBOutlet var descriptionTextField: UITextView!
     
-    private var gradient: CAGradientLayer!
+    @IBOutlet var linkButton: UIButton!
+    @IBOutlet var shareOnTwitterButton: UIButton!
+    @IBOutlet var favoriteButton: UIButton!
+    
+    var urbanDictionarylink: NSURL!
+    
     
     override func awakeFromNib() {
-        
+        super.awakeFromNib()
     }
     
     override func layoutSubviews() {

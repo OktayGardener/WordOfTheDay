@@ -8,46 +8,56 @@
 
 /* Begin PBXBuildFile section */
 		11A777E9239B46CF178032A7 /* Pods_WordOfTheDay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 609C74C149A3F4C1951A7867 /* Pods_WordOfTheDay.framework */; };
+		A29F8F061C990FBA00FD1308 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A29F8F051C990FBA00FD1308 /* LaunchScreen.storyboard */; };
+		A29F8F081C9925E700FD1308 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A29F8F071C9925E700FD1308 /* Assets.xcassets */; };
+		A29F8F181C9A07F300FD1308 /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A29F8F161C9A07F300FD1308 /* TwitterKitResources.bundle */; };
+		A29F8F191C9A07F300FD1308 /* DigitsKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A29F8F171C9A07F300FD1308 /* DigitsKitResources.bundle */; };
+		A29F8F1B1C9A1EF400FD1308 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29F8F1A1C9A1EF400FD1308 /* SettingsTableViewController.swift */; };
+		A29F8F1D1C9A20FB00FD1308 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29F8F1C1C9A20FB00FD1308 /* AboutViewController.swift */; };
+		A29F8F1F1C9A22D200FD1308 /* SettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29F8F1E1C9A22D200FD1308 /* SettingsCell.swift */; };
+		A29F8F211C9A7E1500FD1308 /* WordPersistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29F8F201C9A7E1500FD1308 /* WordPersistence.swift */; };
 		A2EE2B3B1C75A4C00053C050 /* WordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EE2B3A1C75A4C00053C050 /* WordCell.swift */; };
 		A2F4FA0D1C604320008F4C7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F4FA0C1C604320008F4C7D /* AppDelegate.swift */; };
 		A2F4FA121C604320008F4C7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2F4FA101C604320008F4C7D /* Main.storyboard */; };
 		A2F4FA151C604320008F4C7D /* WordOfTheDay.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A2F4FA131C604320008F4C7D /* WordOfTheDay.xcdatamodeld */; };
-		A2F4FA171C604320008F4C7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2F4FA161C604320008F4C7D /* Assets.xcassets */; };
 		A2F4FA271C6044BE008F4C7D /* WordOfTheDayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F4FA261C6044BE008F4C7D /* WordOfTheDayViewController.swift */; };
 		A2F4FA291C6044DF008F4C7D /* WordOfTheDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F4FA281C6044DF008F4C7D /* WordOfTheDay.swift */; };
 		A2F4FA341C604537008F4C7D /* FavoriteWordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F4FA331C604537008F4C7D /* FavoriteWordsViewController.swift */; };
 		A2F4FA361C60454D008F4C7D /* FavoriteWords.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F4FA351C60454D008F4C7D /* FavoriteWords.swift */; };
-		A2F4FA391C60455B008F4C7D /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F4FA381C60455B008F4C7D /* SettingsViewController.swift */; };
 		A2F4FA3B1C604565008F4C7D /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F4FA3A1C604565008F4C7D /* Settings.swift */; };
 		A2F4FA3D1C604588008F4C7D /* UserAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F4FA3C1C604588008F4C7D /* UserAccountViewController.swift */; };
 		A2F4FA3F1C60458F008F4C7D /* UserAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F4FA3E1C60458F008F4C7D /* UserAccount.swift */; };
 		A2F4FA411C604599008F4C7D /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F4FA401C604599008F4C7D /* SignInViewController.swift */; };
 		A2F4FA431C6045A0008F4C7D /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F4FA421C6045A0008F4C7D /* SignIn.swift */; };
-		A2F4FA4C1C604806008F4C7D /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F4FA4B1C604806008F4C7D /* Word.swift */; };
 		A2F4FA501C604849008F4C7D /* SlangWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F4FA4F1C604849008F4C7D /* SlangWord.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2BB961A94E8D54801EA10261 /* Pods-WordOfTheDay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordOfTheDay.release.xcconfig"; path = "Pods/Target Support Files/Pods-WordOfTheDay/Pods-WordOfTheDay.release.xcconfig"; sourceTree = "<group>"; };
 		609C74C149A3F4C1951A7867 /* Pods_WordOfTheDay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WordOfTheDay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A29F8F051C990FBA00FD1308 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A29F8F071C9925E700FD1308 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A29F8F161C9A07F300FD1308 /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = Pods/TwitterKit/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = "<group>"; };
+		A29F8F171C9A07F300FD1308 /* DigitsKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = DigitsKitResources.bundle; path = Pods/Digits/iOS/DigitsKit.framework/Versions/A/Resources/DigitsKitResources.bundle; sourceTree = "<group>"; };
+		A29F8F1A1C9A1EF400FD1308 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		A29F8F1C1C9A20FB00FD1308 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		A29F8F1E1C9A22D200FD1308 /* SettingsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsCell.swift; sourceTree = "<group>"; };
+		A29F8F201C9A7E1500FD1308 /* WordPersistence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordPersistence.swift; sourceTree = "<group>"; };
 		A2EE2B3A1C75A4C00053C050 /* WordCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordCell.swift; sourceTree = "<group>"; };
 		A2F4FA091C604320008F4C7D /* WordOfTheDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordOfTheDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2F4FA0C1C604320008F4C7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2F4FA111C604320008F4C7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A2F4FA141C604320008F4C7D /* WordOfTheDay.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WordOfTheDay.xcdatamodel; sourceTree = "<group>"; };
-		A2F4FA161C604320008F4C7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A2F4FA1B1C604320008F4C7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A2F4FA261C6044BE008F4C7D /* WordOfTheDayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordOfTheDayViewController.swift; sourceTree = "<group>"; };
 		A2F4FA281C6044DF008F4C7D /* WordOfTheDay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordOfTheDay.swift; sourceTree = "<group>"; };
 		A2F4FA331C604537008F4C7D /* FavoriteWordsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteWordsViewController.swift; sourceTree = "<group>"; };
 		A2F4FA351C60454D008F4C7D /* FavoriteWords.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteWords.swift; sourceTree = "<group>"; };
-		A2F4FA381C60455B008F4C7D /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		A2F4FA3A1C604565008F4C7D /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		A2F4FA3C1C604588008F4C7D /* UserAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAccountViewController.swift; sourceTree = "<group>"; };
 		A2F4FA3E1C60458F008F4C7D /* UserAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAccount.swift; sourceTree = "<group>"; };
 		A2F4FA401C604599008F4C7D /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		A2F4FA421C6045A0008F4C7D /* SignIn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
-		A2F4FA4B1C604806008F4C7D /* Word.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
 		A2F4FA4F1C604849008F4C7D /* SlangWord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlangWord.swift; sourceTree = "<group>"; };
 		E1104133F840AE2232428C62 /* Pods-WordOfTheDay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordOfTheDay.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WordOfTheDay/Pods-WordOfTheDay.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,17 +83,47 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		A2EE2B391C75A4AC0053C050 /* View */ = {
+		A29F8EE21C990BF400FD1308 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A2F4FA4F1C604849008F4C7D /* SlangWord.swift */,
+				A2F4FA281C6044DF008F4C7D /* WordOfTheDay.swift */,
+				A2F4FA351C60454D008F4C7D /* FavoriteWords.swift */,
+				A2F4FA3A1C604565008F4C7D /* Settings.swift */,
+				A2F4FA421C6045A0008F4C7D /* SignIn.swift */,
+				A2F4FA3E1C60458F008F4C7D /* UserAccount.swift */,
+				A29F8F201C9A7E1500FD1308 /* WordPersistence.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		A29F8EE31C990C0300FD1308 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A2F4FA261C6044BE008F4C7D /* WordOfTheDayViewController.swift */,
+				A2F4FA331C604537008F4C7D /* FavoriteWordsViewController.swift */,
+				A29F8F1A1C9A1EF400FD1308 /* SettingsTableViewController.swift */,
+				A2F4FA3C1C604588008F4C7D /* UserAccountViewController.swift */,
+				A2F4FA401C604599008F4C7D /* SignInViewController.swift */,
+				A29F8F1C1C9A20FB00FD1308 /* AboutViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		A29F8EE41C990C1A00FD1308 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				A2EE2B3A1C75A4C00053C050 /* WordCell.swift */,
+				A29F8F1E1C9A22D200FD1308 /* SettingsCell.swift */,
 			);
-			name = View;
+			name = Views;
 			sourceTree = "<group>";
 		};
 		A2F4FA001C604320008F4C7D = {
 			isa = PBXGroup;
 			children = (
+				A29F8F161C9A07F300FD1308 /* TwitterKitResources.bundle */,
+				A29F8F171C9A07F300FD1308 /* DigitsKitResources.bundle */,
 				A2F4FA0B1C604320008F4C7D /* WordOfTheDay */,
 				A2F4FA0A1C604320008F4C7D /* Products */,
 				4387BDC5C817FAB550EBB087 /* Pods */,
@@ -102,178 +142,17 @@
 		A2F4FA0B1C604320008F4C7D /* WordOfTheDay */ = {
 			isa = PBXGroup;
 			children = (
-				A2F4FA4D1C60481B008F4C7D /* SlangWord */,
-				A2F4FA461C6047DF008F4C7D /* Word */,
-				A2F4FA451C6047C2008F4C7D /* WordOfTheDay */,
-				A2F4FA241C6043CC008F4C7D /* FavoriteWords */,
-				A2F4FA231C604374008F4C7D /* Settings */,
-				A2F4FA221C60433C008F4C7D /* UserAccount */,
-				A2F4FA211C60432F008F4C7D /* SignIn */,
+				A29F8EE41C990C1A00FD1308 /* Views */,
+				A29F8EE31C990C0300FD1308 /* View Controllers */,
+				A29F8EE21C990BF400FD1308 /* Models */,
 				A2F4FA0C1C604320008F4C7D /* AppDelegate.swift */,
 				A2F4FA101C604320008F4C7D /* Main.storyboard */,
-				A2F4FA161C604320008F4C7D /* Assets.xcassets */,
+				A29F8F051C990FBA00FD1308 /* LaunchScreen.storyboard */,
 				A2F4FA1B1C604320008F4C7D /* Info.plist */,
 				A2F4FA131C604320008F4C7D /* WordOfTheDay.xcdatamodeld */,
+				A29F8F071C9925E700FD1308 /* Assets.xcassets */,
 			);
 			path = WordOfTheDay;
-			sourceTree = "<group>";
-		};
-		A2F4FA211C60432F008F4C7D /* SignIn */ = {
-			isa = PBXGroup;
-			children = (
-				A2F4FA321C604528008F4C7D /* ViewController */,
-				A2F4FA311C604524008F4C7D /* Model */,
-			);
-			name = SignIn;
-			sourceTree = "<group>";
-		};
-		A2F4FA221C60433C008F4C7D /* UserAccount */ = {
-			isa = PBXGroup;
-			children = (
-				A2F4FA301C60451F008F4C7D /* ViewController */,
-				A2F4FA2F1C60451A008F4C7D /* Model */,
-			);
-			name = UserAccount;
-			sourceTree = "<group>";
-		};
-		A2F4FA231C604374008F4C7D /* Settings */ = {
-			isa = PBXGroup;
-			children = (
-				A2F4FA2E1C604515008F4C7D /* ViewController */,
-				A2F4FA2D1C604510008F4C7D /* Model */,
-			);
-			name = Settings;
-			sourceTree = "<group>";
-		};
-		A2F4FA241C6043CC008F4C7D /* FavoriteWords */ = {
-			isa = PBXGroup;
-			children = (
-				A2F4FA2C1C604508008F4C7D /* ViewController */,
-				A2F4FA2B1C6044F9008F4C7D /* Model */,
-			);
-			name = FavoriteWords;
-			sourceTree = "<group>";
-		};
-		A2F4FA251C60445E008F4C7D /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				A2F4FA261C6044BE008F4C7D /* WordOfTheDayViewController.swift */,
-			);
-			name = ViewController;
-			sourceTree = "<group>";
-		};
-		A2F4FA2A1C6044E5008F4C7D /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				A2F4FA281C6044DF008F4C7D /* WordOfTheDay.swift */,
-			);
-			name = Model;
-			sourceTree = "<group>";
-		};
-		A2F4FA2B1C6044F9008F4C7D /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				A2F4FA351C60454D008F4C7D /* FavoriteWords.swift */,
-			);
-			name = Model;
-			sourceTree = "<group>";
-		};
-		A2F4FA2C1C604508008F4C7D /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				A2F4FA331C604537008F4C7D /* FavoriteWordsViewController.swift */,
-			);
-			name = ViewController;
-			sourceTree = "<group>";
-		};
-		A2F4FA2D1C604510008F4C7D /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				A2F4FA3A1C604565008F4C7D /* Settings.swift */,
-			);
-			name = Model;
-			sourceTree = "<group>";
-		};
-		A2F4FA2E1C604515008F4C7D /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				A2F4FA381C60455B008F4C7D /* SettingsViewController.swift */,
-			);
-			name = ViewController;
-			sourceTree = "<group>";
-		};
-		A2F4FA2F1C60451A008F4C7D /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				A2F4FA3E1C60458F008F4C7D /* UserAccount.swift */,
-			);
-			name = Model;
-			sourceTree = "<group>";
-		};
-		A2F4FA301C60451F008F4C7D /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				A2F4FA3C1C604588008F4C7D /* UserAccountViewController.swift */,
-			);
-			name = ViewController;
-			sourceTree = "<group>";
-		};
-		A2F4FA311C604524008F4C7D /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				A2F4FA421C6045A0008F4C7D /* SignIn.swift */,
-			);
-			name = Model;
-			sourceTree = "<group>";
-		};
-		A2F4FA321C604528008F4C7D /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				A2F4FA401C604599008F4C7D /* SignInViewController.swift */,
-			);
-			name = ViewController;
-			sourceTree = "<group>";
-		};
-		A2F4FA451C6047C2008F4C7D /* WordOfTheDay */ = {
-			isa = PBXGroup;
-			children = (
-				A2EE2B391C75A4AC0053C050 /* View */,
-				A2F4FA251C60445E008F4C7D /* ViewController */,
-				A2F4FA2A1C6044E5008F4C7D /* Model */,
-			);
-			name = WordOfTheDay;
-			sourceTree = "<group>";
-		};
-		A2F4FA461C6047DF008F4C7D /* Word */ = {
-			isa = PBXGroup;
-			children = (
-				A2F4FA471C6047E5008F4C7D /* Model */,
-			);
-			name = Word;
-			sourceTree = "<group>";
-		};
-		A2F4FA471C6047E5008F4C7D /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				A2F4FA4B1C604806008F4C7D /* Word.swift */,
-			);
-			name = Model;
-			sourceTree = "<group>";
-		};
-		A2F4FA4D1C60481B008F4C7D /* SlangWord */ = {
-			isa = PBXGroup;
-			children = (
-				A2F4FA4E1C60482C008F4C7D /* Model */,
-			);
-			name = SlangWord;
-			sourceTree = "<group>";
-		};
-		A2F4FA4E1C60482C008F4C7D /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				A2F4FA4F1C604849008F4C7D /* SlangWord.swift */,
-			);
-			name = Model;
 			sourceTree = "<group>";
 		};
 		C0ACF39D4FA36DA91BB9CC06 /* Frameworks */ = {
@@ -297,6 +176,7 @@
 				A2F4FA071C604320008F4C7D /* Resources */,
 				21E7BDC907326155FC51254D /* Embed Pods Frameworks */,
 				164DADF023CB355BAC4E98B4 /* Copy Pods Resources */,
+				A29F8F091C992D1C00FD1308 /* Fabric */,
 			);
 			buildRules = (
 			);
@@ -346,7 +226,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2F4FA171C604320008F4C7D /* Assets.xcassets in Resources */,
+				A29F8F191C9A07F300FD1308 /* DigitsKitResources.bundle in Resources */,
+				A29F8F181C9A07F300FD1308 /* TwitterKitResources.bundle in Resources */,
+				A29F8F061C990FBA00FD1308 /* LaunchScreen.storyboard in Resources */,
+				A29F8F081C9925E700FD1308 /* Assets.xcassets in Resources */,
 				A2F4FA121C604320008F4C7D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -399,6 +282,20 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		A29F8F091C992D1C00FD1308 /* Fabric */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Fabric;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run 77f11269bcad3d83ecc449136b4b19b1c2042b77 0e3c7da35d442f24564ffa6a34dd31c323752c590e6284e195c90994995d1152";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -407,7 +304,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2F4FA3B1C604565008F4C7D /* Settings.swift in Sources */,
-				A2F4FA4C1C604806008F4C7D /* Word.swift in Sources */,
 				A2F4FA431C6045A0008F4C7D /* SignIn.swift in Sources */,
 				A2F4FA3F1C60458F008F4C7D /* UserAccount.swift in Sources */,
 				A2F4FA341C604537008F4C7D /* FavoriteWordsViewController.swift in Sources */,
@@ -415,12 +311,15 @@
 				A2F4FA501C604849008F4C7D /* SlangWord.swift in Sources */,
 				A2F4FA361C60454D008F4C7D /* FavoriteWords.swift in Sources */,
 				A2F4FA291C6044DF008F4C7D /* WordOfTheDay.swift in Sources */,
+				A29F8F211C9A7E1500FD1308 /* WordPersistence.swift in Sources */,
+				A29F8F1D1C9A20FB00FD1308 /* AboutViewController.swift in Sources */,
 				A2F4FA3D1C604588008F4C7D /* UserAccountViewController.swift in Sources */,
+				A29F8F1F1C9A22D200FD1308 /* SettingsCell.swift in Sources */,
 				A2F4FA411C604599008F4C7D /* SignInViewController.swift in Sources */,
 				A2F4FA0D1C604320008F4C7D /* AppDelegate.swift in Sources */,
+				A29F8F1B1C9A1EF400FD1308 /* SettingsTableViewController.swift in Sources */,
 				A2EE2B3B1C75A4C00053C050 /* WordCell.swift in Sources */,
 				A2F4FA151C604320008F4C7D /* WordOfTheDay.xcdatamodeld in Sources */,
-				A2F4FA391C60455B008F4C7D /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

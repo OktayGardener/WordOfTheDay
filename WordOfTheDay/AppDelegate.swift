@@ -11,13 +11,11 @@ import CoreData
 import TwitterKit
 import Fabric
 import Crashlytics
-import DigitsKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // MARK: Twitter & Fabric
@@ -26,10 +24,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         assert(NSBundle.mainBundle().objectForInfoDictionaryKey("Fabric") != nil, welcome)
         
         // Register Crashlytics, Twitter, Digits and MoPub with Fabric.
-        Fabric.with([Crashlytics.self, Twitter.self, Digits.self])
+        Fabric.with([Crashlytics.self, Twitter.self])
         
         // Check for an existing Twitter or Digits session before presenting the sign in screen.
-        if Twitter.sharedInstance().sessionStore.session() == nil && Digits.sharedInstance().session() == nil {
+        if Twitter.sharedInstance().sessionStore.session() == nil {
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let signInViewController: AnyObject! = storyboard.instantiateViewControllerWithIdentifier("SignInViewController")
             window?.rootViewController = signInViewController as? UIViewController
